@@ -98,7 +98,7 @@ ul.footer {
     font-family: var(--font-family-title);
     font-size: var(--font-size-xx-large);
     font-weight: var(--font-weight-bold);
-    margin: var(--section-tagline-margin);
+    margin: var(--section-title-margin);
     color: var(--section-title-color);
 }
 
