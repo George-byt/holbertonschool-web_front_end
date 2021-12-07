@@ -36,6 +36,8 @@ a:hover {
     text-decoration: underline;
 }
 
+
+
 .card-services a {
     display: block;
     padding: 2rem;
@@ -95,7 +97,7 @@ ul.footer {
     color: var(--color-primary);
 }
 
-.card-title .card-services {
+.card-services .card-title {
     margin: 0;
 }
 
@@ -105,7 +107,7 @@ ul.footer {
 
 .section-header {
     text-align: var(--section-header-align);
-    padding: var(--section-padding);
+    padding: var(--section-header-padding);
 }
 
 .section-body {
