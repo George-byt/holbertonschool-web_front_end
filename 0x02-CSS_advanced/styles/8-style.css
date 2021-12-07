@@ -33,6 +33,10 @@ a {
 }
 
 :root {
+    --line-height-small: 1.2;
+    --line-height-base: 1.5;
+    --line-height-big: 1.8;
+
     --color-primary: #d73953;
     --color-black: #090909;
     --color-white: #ffffff;
