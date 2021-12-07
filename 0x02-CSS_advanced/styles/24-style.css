@@ -38,7 +38,7 @@ a:hover {
 
 
 
-.card-services a {
+a .card-services{
     display: block;
     padding: 2rem;
     background-color: var(--color-light-grey);
