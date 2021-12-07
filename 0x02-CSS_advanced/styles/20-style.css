@@ -46,7 +46,7 @@ ul.row {
     list-style: none;
 }
 
-ul.footer {
+.footer ul {
     text-align: right;
 }
 
@@ -88,7 +88,7 @@ ul.footer {
 
 .section-header {
     text-align: var(--section-header-align);
-    padding: var(--section-padding);
+    padding: var(--section-header-padding);
 }
 
 .section-body {
