@@ -89,7 +89,7 @@ ul.footer {
 
 .section-header {
     text-align: var(--section-header-align);
-    padding: var(--section-padding);
+    padding: var(--section-header-padding);
 }
 
 .section-body {
@@ -123,7 +123,7 @@ ul.footer {
     margin-right: auto;
 }
 
-[data-section-theme=“dark”] {
+[data-section-theme="dark"] {
     --text-color: var(--color-white);
     --section-title-color: var(--color-white);
     background-color: var(--color-black);
