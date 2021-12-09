@@ -1,1 +1,1 @@
-# Sass file that prints Hello world in the debug output.
+# 0x03-sass_scss
