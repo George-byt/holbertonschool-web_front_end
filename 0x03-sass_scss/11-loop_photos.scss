@@ -1,0 +1,9 @@
+/* Sass file (For each) */
+@import '0x03-sass_scss/11-photos.scss';
+
+@each $name in $list-names {
+    .photo-#{$name}{
+        background: image-url("photo/"+#{$name}+".jpg") no-repeat;
+    }
+}
+
