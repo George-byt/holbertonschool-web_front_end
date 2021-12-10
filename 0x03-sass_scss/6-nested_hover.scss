@@ -1,0 +1,9 @@
+/* Sass file (Nested hover) */
+$text-color_button: #FF0000;
+$text-color_hover: #00FF00;
+button {
+    color: #FF0000;
+    &:hover {
+        color: $text-color_hover;
+    }
+}
