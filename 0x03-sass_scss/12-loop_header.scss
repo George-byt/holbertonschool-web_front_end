@@ -1,5 +1,5 @@
 /* Loop headers */
-@for $n from 1 to 6 {
+@for $n from 1 to 7 {
     .h#{$n}{
         font-size: #{$n}px;
     }
