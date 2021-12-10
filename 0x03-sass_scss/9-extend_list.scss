@@ -1,0 +1,14 @@
+/* Sass file (Extended) */
+.info {
+    font-size: 12px;
+}
+
+.success {
+    @extend .info;
+    color: #00FF00;
+}
+
+.warning {
+    color: #FF0000;
+    @extend .info;
+}
