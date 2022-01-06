@@ -1,0 +1,44 @@
+body div:first-of-type {
+    border-bottom-color: #E0003C !important;    
+}
+a {
+    color: #E0003C;
+}
+    a:hover {
+        color: #E0003C;
+    }
+    a:focus {
+        color: #E0003C;
+    }
+
+.btn-primary {
+    background: #E0003C;
+}
+    .btn-primary:hover {
+        background: #BC1340;
+    }
+    .btn-primary:focus {
+        background: #BC1340;
+    }
+    .btn-primary:active {
+        background: #BC1340;
+    }
+.btn-outline-primary {
+    color: hsl(344, 100%, 44%);
+    border-color: #E0003C;
+}
+.text-muted {
+    color: #8C8C8C;
+}
+.card {
+    overflow: hidden;
+    border-radius: 1rem;
+}
+.card .card-header {
+    border-color: #E0003C;
+    border-radius: 1rem;
+}
+.card-header {
+    background-color: #E0003C;
+    color: white;
+}
