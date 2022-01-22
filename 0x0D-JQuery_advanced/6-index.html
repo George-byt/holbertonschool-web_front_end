@@ -29,7 +29,7 @@
             const addNewMember = (firstName, lastName, position) => {
                 switch (position) {
                     case 'before':
-                        $('tbody').append([
+                        $('tbody').prepend([
                             $('<tr/>').append([
                                 $('<td/>', { text: firstName }),
                                 $('<td/>', { text: lastName })
