@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Task 2</title>
+
+    <script>
+        const setCookies = () => {
+            let date = new Date();
+            date.setTime(date.getTime() + (10 * 24 * 60 * 60 * 1000));
+            let expire = date.toUTCString();
+            document.cookie = `firstname= ${document.getElementById('firstname').value}; expires=` + expire;
+            document.cookie = `email= ${document.getElementById('email').value}; expires=` + expire;
+        }
+        const showCookies = () => {
+            const paragraph = document.createElement('p');
+            paragraph.innerHTML = `Email: ${getCookie('email')} - Firstname: ${getCookie('firstname')}`;
+            document.body.appendChild(paragraph);
+        }
+        const getCookie = (name) => {
+            let cname = name + "=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let cookieArray = decodedCookie.split(';');
+            for (let i = 0; i < cookieArray.length; i++) {
+                let c = cookieArray[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length + 1, c.length)
+                }
+            }
+            return "";
+        }
+    </script>
+
+</head>
+
+<body>
+    <h2>
+        Login to the website
+    </h2>
+    <input type="text" id="firstname" placeholder="Fistname">
+    <input type="email" id="email" placeholder="Email">
+    <button onclick="setCookies()">Log me in</button>
+    <div>
+        <h2>
+            Cookies
+        </h2>
+        <button onclick="showCookies()">Show the cookies</button>
+    </div>
+</body>
+
+</html>
