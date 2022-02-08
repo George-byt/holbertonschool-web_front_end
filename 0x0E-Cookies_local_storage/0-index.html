@@ -8,13 +8,13 @@
     <title>task 0</title>
     <script>
         const setCookies = () => {
-            document.cookie = `firstname= ${document.getElementById('firstname').value}`;
-            document.cookie = `email= ${document.getElementById('email').value}`;
+            document.cookie = `firstname=${document.getElementById('firstname').value}`;
+            document.cookie = `email=${document.getElementById('email').value}`;
         }
 
         const showCookies = () => {
             let paragraph = document.createElement('p');
-            paragraph.innerHTML = `Cookies: ${document.cookie}`;
+            paragraph.innerHTML = `Cookies:${document.cookie}`;
             document.body.appendChild(paragraph);
         }
     </script>
